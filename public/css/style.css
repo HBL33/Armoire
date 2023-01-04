@@ -1,0 +1,309 @@
+/* Themes */
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --falling-star: #cad3c8;
+  --magenta-purple: #6d214f;
+  --paradise-green: #b8e994;
+  --danger: #b71540;
+  --background-light: #d1d8e0;
+  --text-color: #444;
+  --text-color-light: #fafafa;
+  --border: 1px solid #eee;
+  --box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3),
+    0px 2px 6px 2px rgba(60, 64, 67, 0.15);
+}
+
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+
+/* html, */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: var(--font-family);
+  background: linear-gradient(
+      to bottom,
+      rgba(183, 159, 202, 0.452),
+      rgba(255, 255, 255, 0.473)
+    ),
+    url("..//image/dressing-monarmoire.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p,
+span {
+  margin: 0;
+  color: var(--magenta-purple);
+}
+
+h1 {
+  color: var(--magenta-purple);
+  text-shadow: rgb(198, 196, 196) 0.1em 0em 0.1em;
+}
+h2,
+h3 {
+  color: var(--magenta-purple);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+label {
+  color: var(--text-color);
+  margin-right: 10px;
+}
+img {
+  border-radius: 0.5rem;
+}
+/* container */
+
+.container {
+  font-size: 1.2rem;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: row;
+  color: var(--text-color-light);
+}
+
+/* text error */
+
+.text-danger {
+  color: var(--danger);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* buttons */
+
+.btn {
+  font-weight: 400;
+  color: var(--text-color-light);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.btn-primary {
+  background-color: var(--danger);
+  color: var(--text-color-light);
+}
+
+.btn-secondary {
+  background-color: var(--magenta-purple);
+  color: var(--text-color-light);
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+
+/* header */
+.nav-link,
+.navbar-brand {
+  color: var(--magenta-purple);
+}
+.hb-navbar {
+  background: var(--text-color-light);
+  color: var(--magenta-purple);
+  font-weight: bold;
+  box-shadow: var(--box-shadow);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(109,33,79, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* footer */
+
+footer {
+  background: transparent;
+  display: flex;
+  flex-flow: row-reverse;
+  color: #6d214f;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+/* content */
+.content {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.dress {
+  max-width: 980px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+.dress img {
+  max-width: 300px;
+}
+
+.article {
+  width: 300px;
+  margin: 10px;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.card-body label {
+  font-size: larger;
+  color: #6d214f;
+}
+.card-body p {
+  font-size: x-large;
+  color: indigo;
+}
+
+.article img {
+  max-height: 300px;
+  border-radius: 0.5rem;
+}
+.hb-home img {
+  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hb-form {
+  background: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  color: rgb(109, 33, 79);
+  box-shadow: var(--box-shadow);
+}
+.hb-form a {
+  text-decoration: none;
+  color: #6d214f;
+}
+
+.hb-form-control {
+  width: 100%;
+  font-size: 1.2rem;
+  border: var(--border);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: rgba(60, 64, 67, 0.1);
+  box-shadow: none;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in;
+}
+.form-control:focus,
+.form-control:hover {
+  background: #373636;
+  color: #d2c8d3;
+}
+a.navbar-brand {
+  text-decoration: none;
+  color: var(--magenta-purple);
+}
+
+a.navbar-brand:hover {
+  text-decoration: none;
+}
+.nav-link {
+  color: var(--magenta-purple);
+}
+.anim-active {
+  text-decoration: underline var(--magenta-purple);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.3rem;
+}
+a:hover {
+  text-decoration: underline var(--magenta-purple);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.3rem;
+}
+.nav-link:hover {
+  color: #6d214f;
+}
+footer a {
+  text-decoration: none;
+  color: #6d214f;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #6d214f;
+}
+.article:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+.select {
+  background: linear-gradient(
+      to bottom,
+      rgba(216, 242, 244, 0.326),
+      rgba(224, 224, 231, 0.5)
+    ),
+    #fafafaa7;
+  margin: 10px;
+  padding: 0.5rem;
+  max-width: 300px;
+  border-radius: 0.5rem;
+  color: rgb(109, 33, 79);
+}
+/* label pasword */
+label {
+  position: relative;
+}
+.scrollcheck {
+  border: 2px;
+  width: 280px;
+  height: 60px;
+  overflow-y: auto;
+}
+.card-body {
+  min-height: 120px;
+}
+
+label input:focus {
+  border-color: var(--magenta-purple);
+}
+
+label .password-icon {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+
+  color: #f9f9f9;
+  transition: all 0.2s;
+}
+
+label .password-icon:hover {
+  cursor: pointer;
+  color: var(--magenta-purple);
+}
+
+label .password-icon .feather-eye-off {
+  display: none;
+}
+.ml li {
+  color: #6d214f;
+}
